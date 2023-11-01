@@ -1,3 +1,58 @@
-h1 {
-    color: red;
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('fonts/OpenSans-Regular.woff') format('woff'),
+    url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('fonts/OpenSans-Bold.woff') format('woff'),
+    url('fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.fullheader {
+    display: flex;
+    flex-direction: column;
+    max-width: 1700;
+    max-height: 450px;
+    
+}
+
+.topheader {
+    display: flex;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    max-width: 1200px;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 30px;
+    margin-bottom: 85px;
+    justify-content: space-between;
+}
+
+.headlogosvg {
+    width: 179px;
+}
+
+.bottomheader {
+    align-self: center;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+.headmenu {
+    display: flex;
+    gap: 35px;
+}
+
+body {
+    padding: 0px;
 }
