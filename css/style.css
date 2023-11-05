@@ -21,12 +21,12 @@ menu {
 }
 
 .relative-sans {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
 }
 
 .bold-sans {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
 
