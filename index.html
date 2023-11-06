@@ -22,7 +22,7 @@
             </div>
             <h1 class="header-title bold-sans">Блог о творчестве, спорте,<br> и образе жизни</h1>
         </header>
-        <div class="now-in-trand">
+        <section class="now-in-trand">
             <h2 class="block-title bold-sans">Сейчас в тренде</h2>
             <div class="shape"></div>
             <div class="trands-container">
@@ -62,9 +62,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <main class="site-body">
-            <div class="left-block-posts">
+            <section class="left-block-posts">
                 <div class="post1 post">
                     <img src="images/last-post1.jpg" alt="карточка поста" class="post-img">
                     <div class="post-describes">
@@ -125,8 +125,8 @@
                         <p class="post-spoiler relative-sans">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
                     </div>
                 </div>
-            </div>
-            <div class="right-block">
+            </section>
+            <section class="right-block">
                 <h3 class="block-title new-posts-title bold-sans">Новые посты</h3>
                 <div class="shape"></div>
                 <menu class="right-posts-navigator">
@@ -173,7 +173,7 @@
                 <h3 class="block-title new-posts-title small-title bold-sans">Рассылка</h3>
                 <div class="shape"></div>
                 <form class="subscribtion-form" action="">
-                    <input class="subscribtion-input relative-sans" name="s" placeholder="Ваш email-адрес" type="search">
+                    <input class="subscribtion-input relative-sans" placeholder="Ваш email-адрес" type="search">
                     <button class="subscribtion-button bold-sans" type="submit">Подписаться</button>
                 </form>
                 <h3 class="block-title new-posts-title small-title bold-sans">Теги</h3>
@@ -222,9 +222,9 @@
                     </div>
                     <div class="theme-line-splitter"></div>
                 </div>                
-            </div>
+            </section>
         </main>
-        <div class="product-menu">
+        <section class="product-menu">
             <h2 class="block-title bold-sans">Наши изделия</h2>
             <div class="shape"></div>
             <div class="our-prodycts-container">
@@ -264,17 +264,50 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <footer class="site-footer">
-            <div class="footer-links">
+            <section class="footer-links">
                 <a href="#"><img src="svg/004-twitter.svg" alt="твиттер" class="footer-link"></a>
                 <a href="#"><img src="svg/001-pinterest.svg" alt="пинтерест" class="footer-link"></a>
                 <a href="#"><img src="svg/002-facebook-logo.svg" alt="фейсбук" class="footer-link"></a>
                 <a href="#"><img src="svg/005-instagram.svg" alt="инстаграм" class="footer-link"></a>
                 <a href="#"><img src="svg/003-tumblr.svg" alt="тамблер" class="footer-link"></a>
-            </div>
+            </section>
             <p class="copyright-title bold-sans">Copyright © 2009–2019 City Blog LLC.</p>
         </footer>
+    </div>
+    <div class="popup _hidden">
+        <div class="dark-layer"></div>
+        <div class="popup-container">
+            <button class="popup-close-button" type="button"><img src="svg/form-x.svg" alt="Закрыть" class="popup-close"></button>
+            <h2 class="block-title bold-sans">ВАШ ФИТБЕК</h2>
+            <div class="shape"></div>
+            <form class="poll relative-sans">
+                <label for="time-choise" class="question quest-1">Как часто вы заходите на сайт?</label>
+                <select class="time-select" id="time-choise">
+                    <option value="almost-every-day" selected>Почти каждый день</option>
+                    <option value="var-2">Почти каждый месяц</option>
+                </select>
+                <label class="question" for="is-email-sub">Вы подписаны на e-mail рассылку?</label>
+                <div class="email-radio">
+                    <div class="one-radio-block">
+                        <label class="checkbox-group">
+                            <input class="email-radio-check" type="radio" checked name="yes" id="is-email-sub">
+                            <span class="radio-title relative-sans">Да</span>
+                        </label>
+                    </div>
+                    <div class="one-radio-block">
+                        <label class="checkbox-group">
+                            <input class="email-radio-check" type="radio" checked name="yes" id="is-email-sub">
+                            <span class="radio-title relative-sans">Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <label class="question" for="text-field">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+                <textarea class="text-field-input relative-sans" placeholder="Может, больше рецептов?" type="text" id="text-field"></textarea>
+                <button class="popup-push-button bold-sans" type="submit">Подписаться</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

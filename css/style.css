@@ -563,3 +563,152 @@ body {
     font-size: 12px;
     color: #999999;
 }
+
+._hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.dark-layer {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
+    height: 590px;
+    background-color: #FFFFFF;
+    top: 16vh;
+}
+
+.popup-close {
+    width: 17px;
+}
+
+.popup-close-button {
+    padding: 0;
+    margin-top: -23px;
+    margin-right: -375px;
+    border-radius: 0;
+    border: 0;
+    background: 0;
+}
+
+.poll {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+
+.question {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.quest-1 {
+    margin-top: -17px;
+}
+
+.time-select {
+    appearance: none;
+    padding-left: 22px;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 24px;
+    background-color: #f4f7f6;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    color: #939594;
+    font-size: 13px;
+    background-size: 10px;
+}
+
+.time-select:focus {
+    box-shadow: 0px 1px 0px 0px #ebe7d7;
+    outline: none;
+}
+
+.email-radio {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 30px;
+}
+
+.one-radio-block {
+    display: flex;
+}
+
+.radio-title {
+    font-size: 13px;
+}
+
+.email-radio-check {
+    display: none;
+}
+
+.radio-title::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../svg/form-empty-circle.svg");
+    width: 17px;
+    height: 17px;
+    background-size: 17px;
+    margin-right: 4px;
+}
+
+.email-radio-check:checked ~ .radio-title::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.text-field-input {
+    padding-left: 22px;
+    padding-top: 18px;
+    width: calc(100% - 22px);
+    height: 130px;
+    resize: none;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 24px;
+    background-color: #f4f7f6;
+    color: #939594;
+}
+
+.popup-push-button {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #b59f5b;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.popup-push-button:focus {
+    box-shadow: 0px -1px 0px 0px #323232;
+    outline: none;
+}
+
+.text-field-input:focus {
+    box-shadow: 0px 1px 0px 0px #ebe7d7;
+    outline: none;
+}
