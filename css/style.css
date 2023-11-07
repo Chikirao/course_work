@@ -16,6 +16,11 @@
     font-style: normal;
 }
 
+._hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
 menu {
     padding: 0;
 }
@@ -564,11 +569,6 @@ body {
     color: #999999;
 }
 
-._hidden {
-    position: fixed;
-    transform: scale(0);
-}
-
 .dark-layer {
     top: 0;
     left: 0;
@@ -711,4 +711,96 @@ body {
 .text-field-input:focus {
     box-shadow: 0px 1px 0px 0px #ebe7d7;
     outline: none;
+}
+
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.one-burger-line {
+    width: 23px;
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .site-body {padding: 0 35px;}
+    .post {flex-direction: column;}
+    .post-img {width: 390px;}
+    .post-describes {
+        max-width: 390px;
+        margin: 0;
+        margin-top: 17px;
+    }
+    .top-header {padding: 40px 35px 0 35px;}
+    .header-menu {
+        position: fixed;
+        transform: scale(0);
+    }
+    .trands-container {flex-wrap: wrap; gap: 0;}
+    .trand {width: 49.8%; margin-top: 3px;}
+    .product-menu {
+        margin: 0 35px;
+        padding: 0;
+    }
+    .our-prodycts-container {
+        flex-wrap: wrap;
+    }
+    .product {
+        margin-bottom: 30px;
+    }
+    .site-footer {
+        margin-top: 35px;
+    }
+    .footer-links {
+        box-sizing: border-box;
+        border-left: 35px solid white;
+        border-right: 35px solid white;
+    }
+    .product {
+        margin-top: 200px;
+    }
+    .product-1 img {
+        content: url("../images/shop-item-tablet1.jpg");
+    }
+    .product-2 img {
+        content: url("../images/shop-item-tablet2.jpg");
+    }
+    .product-3 img {
+        content: url("../images/shop-item-tablet3.jpg");
+    }
+}
+
+@media (min-width: 1201px) {
+    .menu-burger {
+        position: fixed;
+        transform: scale(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .site-body {flex-direction: column;}
+    .right-block {margin-top: 30px;}
+    .product {
+        margin-top: 250px;
+    }
+    .product-1 img {
+        content: url("../images/shop-item-mobile1.jpg");
+    }
+    .product-2 img {
+        content: url("../images/shop-item-mobile2.jpg");
+    }
+    .product-3 img {
+        content: url("../images/shop-item-mobile3.jpg");
+    }
+}
+
+@media (max-width: 640px) and (orientation: portrait) {
+    .trand {width: 100%;}
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .trand {width: 49.5%;}
 }
