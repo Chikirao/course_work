@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
-    url('fonts/OpenSans-Regular.woff') format('woff'),
-    url('fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Bold.woff2') format('woff2'),
-    url('fonts/OpenSans-Bold.woff') format('woff'),
-    url('fonts/OpenSans-Bold.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -21,7 +21,7 @@
     transform: scale(0);
 }
 
-menu {
+nav {
     padding: 0;
 }
 
@@ -238,7 +238,7 @@ body {
 }
 
 .post-img {
-    width: 381px;
+    min-width: 381px;
 }
 
 .post-tags {
@@ -317,8 +317,7 @@ body {
 }
 
 .mini-post-img {
-    width: 70px;
-    height: 70px;
+    min-width: 70px;
 }
 
 .mini-post-title {
@@ -819,7 +818,7 @@ body {
         margin-top: 50px;
     }
     .post {flex-direction: column;}
-    .post-img {width: 390px;}
+    .post-img {min-width: 390px;}
     .post-describes {
         max-width: 393px;
         margin: 0;
@@ -829,7 +828,6 @@ body {
         font-size: 17px;
         line-height: 22px;
         margin-top: 3px;
-        margin-left: -2x;
     }
     .slide-shape {
         height: 3px;
@@ -918,7 +916,7 @@ body {
         font-size: 35px;
     }
     .post-img {
-        width: 300px;
+        min-width: 300px;
     }
     .site-body {flex-direction: column; align-items: center;}
     .right-block-menu {margin-top: 30px;}
