@@ -58,9 +58,11 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 24px 245px 0px 245px;
+    padding-top: 24px;
     align-items: center;
     font-size: 13px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .head-logosvg {
@@ -92,6 +94,10 @@ body {
     text-transform: uppercase;
     line-height: 75px;
     margin-top: 60px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .shape {
@@ -265,7 +271,7 @@ body {
     color: #000;
     text-transform: uppercase;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -535,12 +541,20 @@ body {
     font-size: 20px;
     margin-bottom: 0;
     margin-top: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .product-describe {
     font-size: 15px;
     margin-top: 3px;
     margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .linked-describe {
@@ -640,9 +654,9 @@ body {
     flex-direction: column;
     align-items: center;
     width: 390px;
-    height: 590px;
+    height: 595px;
     background-color: #FFFFFF;
-    top: 16vh;
+    top: 22vh;
 }
 
 .popup-close {
@@ -665,13 +679,18 @@ body {
 }
 
 .question {
+    width: 320px;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .quest-1 {
-    margin-top: -17px;
+    margin-top: 8px;
 }
 
 .time-select {
@@ -681,7 +700,7 @@ body {
     height: 48px;
     border-radius: 0;
     border: 0;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     background-color: #f4f7f6;
     background-image: url("../svg/form-arrows.svg");
     background-repeat: no-repeat;
@@ -731,14 +750,15 @@ body {
 }
 
 .text-field-input {
-    padding-left: 22px;
-    padding-top: 18px;
+    padding-left: 19px;
+    padding-top: 14px;
+    font-size: 13px;
     width: calc(100% - 22px);
     height: 130px;
     resize: none;
     border-radius: 0;
     border: 0;
-    margin-bottom: 24px;
+    margin-bottom: 29px;
     background-color: #f4f7f6;
     color: #939594;
 }
@@ -777,7 +797,10 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .full-header {height: 390px;}
+    .full-header {
+        height: 390px;
+        background-image: url("../images/banner-bg-tablet.jpg");
+    }
     .head-logosvg {
         width: 158px;
         margin-left: 0px;
@@ -895,6 +918,27 @@ body {
         margin-top: 45px;
         margin-bottom: 35px;
     }
+    .radio-title::before {
+        width: 26px;
+        height: 26px;
+        background-size: 26px;
+    }
+    .email-radio {
+        gap: 33px;
+    }
+    .text-field-input {
+        height: 110px;
+    }
+    .popup-close {
+        width: 27px;
+    }
+    .popup-close-button {
+        margin-top: -38px;
+        margin-right: -360px;
+    }
+    .time-select {
+        padding-left: 22px;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -906,6 +950,10 @@ body {
         position: fixed;
         transform: scale(0);
     }
+    .quest-1 {margin-top: -5px;}
+    .question {margin-bottom: 10px;}
+    .email-radio {margin-top: -7px;}
+    .text-field-input {height: 110px;}
 }
 
 @media (max-width: 640px) {
@@ -940,4 +988,9 @@ body {
 
 @media (max-width: 640px) and (orientation: landscape) {
     .trand {width: 49.5%;}
+}
+
+
+.popup-title {
+    margin-top: 56px;
 }

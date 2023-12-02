@@ -9,21 +9,23 @@
 <body>
     <div class="page">
         <header class="full-header background-tint">
-            <div class="top-header">
-                <a href="#" class="header-logo"><img src="svg/noemi-logo.svg" class="head-logosvg" alt="logo"></a>
-                <div class="menu-burger">
-                    <div class="one-burger-line"></div>
-                    <div class="one-burger-line"></div>
-                    <div class="one-burger-line"></div>
+            <div class="top-header-container">
+                <div class="top-header">
+                    <a href="#" class="header-logo"><img src="svg/noemi-logo.svg" class="head-logosvg" alt="logo"></a>
+                    <div class="menu-burger">
+                        <div class="one-burger-line"></div>
+                        <div class="one-burger-line"></div>
+                        <div class="one-burger-line"></div>
+                    </div>
+                    <nav class="header-menu relative-sans">
+                        <a href="#" class="headlinks">Главная</a>
+                        <a href="#" class="headlinks">Посты</a>
+                        <a href="#" class="headlinks">Статьи</a>
+                        <a href="#" class="headlinks">Теги</a>
+                        <a href="#" class="headlinks">Темы</a>
+                        <a href="#" class="headlinks">Контакты</a>
+                    </nav>
                 </div>
-                <nav class="header-menu relative-sans">
-                    <a href="#" class="headlinks">Главная</a>
-                    <a href="#" class="headlinks">Посты</a>
-                    <a href="#" class="headlinks">Статьи</a>
-                    <a href="#" class="headlinks">Теги</a>
-                    <a href="#" class="headlinks">Темы</a>
-                    <a href="#" class="headlinks">Контакты</a>
-                </nav>
             </div>
             <h1 class="header-title bold-sans">Блог о творчестве, спорте,<br> и образе жизни</h1>
         </header>
@@ -187,7 +189,7 @@
                 </form>
                 <h3 class="block-title new-posts-title tags-title small-title bold-sans">Теги</h3>
                 <div class="shape sub-shape"></div>
-                <div class="right-tags-container bold-sans">
+                <section class="right-tags-container bold-sans">
                     <a class="right-tag" href="#">Fashion</a>
                     <a class="right-tag" href="#">Music</a>
                     <a class="right-tag" href="#">Lifestyle</a>
@@ -196,7 +198,7 @@
                     <a class="right-tag" href="#">Travel</a>
                     <a class="right-tag" href="#">Food</a>
                     <a class="right-tag" href="#">Health</a>
-                </div>                
+                </section>                
                 <h3 class="block-title new-posts-title subscribtion-title small-title bold-sans">Темы</h3>
                 <div class="shape sub-shape"></div>
                 <div class="themes-container">
@@ -289,8 +291,8 @@
         <div class="dark-layer"></div>
         <div class="popup-container">
             <button class="popup-close-button" type="button"><img src="svg/form-x.svg" alt="Закрыть" class="popup-close"></button>
-            <h2 class="block-title bold-sans">ВАШ ФИТБЕК</h2>
-            <div class="shape"></div>
+            <h2 class="block-title popup-title bold-sans">ВАШ ФИДБЕК</h2>
+            <div class="shape popup-shape"></div>
             <form class="poll relative-sans">
                 <label for="time-choise" class="question quest-1">Как часто вы заходите на сайт?</label>
                 <select class="time-select" id="time-choise">
@@ -314,7 +316,7 @@
                 </div>
                 <label class="question" for="text-field">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
                 <textarea class="text-field-input relative-sans" placeholder="Может, больше рецептов?" id="text-field"></textarea>
-                <button class="popup-push-button bold-sans" type="submit">Подписаться</button>
+                <button class="popup-push-button bold-sans" type="submit">Отправить</button>
             </form>
         </div>
     </div>
